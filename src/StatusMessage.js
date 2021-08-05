@@ -5,9 +5,7 @@ const StatusMessage = ({ current, winner }) => {
   //     ? `Winner is ${winner}`
   //     : `Next Player is ${current.isXNext ? "X" : "O"}`;
 
-  const noMovesLeft = current.board.every((el) => {
-    el !== null;
-  });
+  const noMovesLeft = current.board.every((el) => el !== null);
 
   return (
     <h2>
