@@ -1,9 +1,14 @@
 import React from "react";
 
-const Square = ({ value, onClick }) => {
+const Square = ({ value, onClick, isWinningSquare }) => {
   //   console.log(props);
   return (
-    <button type="button" className="square" onClick={onClick}>
+    <button
+      style={{ fontWeight: isWinningSquare ? "bold" : "normal" }}
+      type="button"
+      className="square"
+      onClick={onClick}
+    >
       {value}
     </button>
   );
