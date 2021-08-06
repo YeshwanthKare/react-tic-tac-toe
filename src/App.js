@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import Board from "./components/Board";
-import History from "./History";
-import { calculateWinner } from "./helper";
+import History from "./components/History";
+import { calculateWinner } from "./components/helper";
 import "./styles/root.scss";
-import StatusMessage from "./StatusMessage";
+import StatusMessage from "./components/StatusMessage";
 
 const App = () => {
   const NEW_GAME = [{ board: Array(9).fill(null), isXNext: true }];
